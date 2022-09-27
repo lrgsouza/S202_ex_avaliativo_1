@@ -1,0 +1,29 @@
+{
+  $jsonSchema: {
+    bsonType: 'object',
+    required: [
+      '_id',
+      'assunto',
+      'professor',
+      'lista_presenca'
+    ],
+    properties: {
+      _id: {
+        bsonType: 'int',
+        description: 'deve ser um int'
+      },
+      assunto: {
+        bsonType: 'string',
+        description: 'deve ser uma string'
+      },
+      professor: {
+        bsonType: 'object',
+        description: 'deve ser um objeto do professor com Nome e especialidade'
+      },
+      lista_presenca: {
+        bsonType: 'array',
+        description: 'deve ser um array com alunos'
+      }
+    }
+  }
+}
